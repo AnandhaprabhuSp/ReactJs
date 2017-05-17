@@ -1,0 +1,301 @@
+ .body-container {
+     margin: 0px 0px;
+     background-color: #fafafa;
+     
+     height: 100%;
+     width: 100%;
+ }
+ .page-header {
+     margin: 0px 0px;
+     height: 35px;
+     width: 100%;
+     background-color: #CD6155;
+     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif";
+ color: #641E16;
+ }
+ .page-header-sub h1 {
+     padding-left: 45px;
+ }
+ .page-content {
+     margin: 0px 0px;
+     height: calc(100%-55px);
+     width: 100%;
+     background-color: beige;
+ }
+ .page-footer{
+     height: 20px;
+     width: 100%;
+     background-color: #CD6155;
+     position:fixed;
+     bottom: 0px;
+     left:0px;
+ }
+
+ .content-left {
+     margin: 0px;
+     left: 0;
+     top: 0;
+     height: 590px;
+     width: 64.5%;
+     background-color: darkgrey;
+     float: left;
+ }
+ .content-right {
+     margin: 0px 1px;
+     width: 35%;
+     height: 590px;
+     padding: auto 0 auto 850px;
+     background-color: white;
+     float: right;
+ }
+ .user-header {
+     margin: 5px 100 20px 580px;
+ }
+ .btn-like {
+     height: 30px;
+     width: 55px;
+     display: inline-block;
+     padding: 5px 5px;
+     margin-bottom: 5px;
+     margin-left: 5px;
+     font-size: 12px;
+     font-weight: bold;
+     line-height: 1.42857143;
+     text-align: center;
+     white-space: nowrap;
+     vertical-align: middle;
+     -ms-touch-action: manipulation;
+     touch-action: manipulation;
+     cursor: pointer;
+     -webkit-user-select: none;
+     -moz-user-select: none;
+     -ms-user-select: none;
+     user-select: none;
+     background-image: none;
+     border: 1px solid transparent;
+     border-radius: 4px;
+     position: relative;
+     bottom: 0;
+ }
+ .btn-like img {
+     height: 15px;
+     width: 15px;
+ }
+ .btn-like.fb img {
+     height: 18px;
+     width: 18px;
+ }
+.fb{
+    width:40px;
+}
+
+.btn-like.like:hover img{
+    content:url("https://image.flaticon.com/icons/svg/148/148836.svg");
+}
+.btn-like.fb:hover img{
+    content:url("https://image.flaticon.com/icons/svg/226/226234.svg");
+}
+ .page-header {
+     display: table;
+ }
+ .page-header-sub {
+     display: table-cell;
+ }
+ .body-container {
+     display: inline-block;
+ }
+ .list-group {
+     height: auto;
+     width: 250px;
+     background-color: whitesmoke;
+     display: table-cell;
+     border: 5px solid white;
+     text-align: center;
+     position: relative;
+ }
+ .list-group-row {
+     display: table;
+ }
+ .list-group-item-category {
+     padding: 0px 2px;
+     text-align: center;
+     color: #641E16;
+     font-weight: bold;
+ }
+ .list-group-item-heading {
+     margin: 0px 5px;
+     padding: 3px 0px;
+     /*height: 65px;*/
+     overflow: hidden;
+     font-weight: bold;
+     background-color: rgba(158, 158, 158, 0.4);
+     text-align: center;
+ }
+ .list-group-item-text {
+     margin: 0px 5px;
+     height: auto;
+     overflow: hidden;
+     text-align: justify;
+     font-family: Ubuntu;
+ }
+ .list-group-item-foot {
+     margin: 0px 5px;
+     height: 55px;
+     overflow: hidden;
+     font-size: 13px;
+     font-style: italic;
+     text-align: center;
+ }
+ .list-group-item-foot a {
+     color: #641E16;
+ }
+ .list-group-item-img img {
+     margin: 2px 2px;
+     width: 100px;
+     height: 75px;
+     
+ }
+.list-group-item-img{
+    text-align: center;
+}
+ .col-sm-3 {
+     top: 3px;
+ }
+ .col-sm-3:hover {
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0px 0px 20px 15px rgba(0, 0, 0, 0.19);
+     cursor: pointer;
+ }
+.loading-img{
+    position: absolute ;
+    top: 30%;
+    left: 30%;
+    z-index: 4;
+}
+.hidden{
+     opacity:0;
+}
+.visible{
+     opacity:1;
+}
+
+.alert-danger{
+    margin:50px;
+}
+.btn-block{
+    margin:20px;
+}
+#form-signin div input{
+    margin:10px;
+}
+.float-bar-left{
+        position: fixed;
+    float: left;
+    top: 107px;
+    left: -37px;
+    width: 100px;
+    background-color: ghostwhite;
+    z-index:1;
+    box-shadow: 10px 1px 10px #888888;
+}
+.feeds{
+    padding-left: 50px;
+}
+#feeds .row{
+    margin-left:20px;
+    margin-top: 25px;
+}
+.content-right .row{
+    text-align: center;
+}
+.float-left img{
+    height:37px;
+    width:37px;
+}
+.float-left h6{
+    font-size:10px;
+}
+.float-left{
+    text-align: center;
+}
+.float-left a{
+    width:70px;
+    
+}
+.float-left:hover{
+    box-shadow: 10px 1px 10px #888888;
+     width: contain;
+}
+
+/*other css */
+
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.aos-all {
+  width: 1000px;
+  max-width: 98%;
+  margin: 10vh auto 0 auto;
+}
+
+.aos-item {
+  display: inline-block;
+  float: left;
+  width: 32.3333%;
+  /*height: 450px;*/
+  padding: 7px;
+  margin: 3px;
+  box-shadow: 0px 0px 10px 3px rgba(181,181,181,1);
+}
+
+.aos-item__inner {
+  position: relative;
+  width: 100%;
+  /*height: 100%;*/
+  float: left;
+  background:#f8f8f8;
+  /*line-height: 260px;*/
+  text-align: center;
+  color: #333;
+}
+.aos-item__inner h4{
+text-align: left;
+    margin-left: 35px;
+width: 40%;}
+.aos-item:hover {
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0px 0px 20px 15px rgba(0, 0, 0, 0.19);
+     cursor: pointer;
+ }
+
+@media screen and (max-width: 800px) {
+  .aos-item {
+    width: 50%;
+  }
+}
+.userProfile .aos-item{
+    width: 100%;
+}
+.profile_span{
+    font-size:smaller;
+}
+.profile_dp{
+    height:90px;
+    width:90px;
+    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0px 0px 15px 5px rgba(0, 0, 0, 0.19);
+}
+.oopsImg{
+    margin-top:100px;
+   height: 10em;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+.login-btn .btn-default{
+    margin:0px 10px;
+}
+#login-warning{
+    display:none;
+}

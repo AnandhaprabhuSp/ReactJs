@@ -1,0 +1,3 @@
+npm start
+
+json-server --port 7000 --watch pg_data.json

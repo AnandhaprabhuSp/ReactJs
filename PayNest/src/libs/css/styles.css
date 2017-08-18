@@ -1,0 +1,715 @@
+html{
+    font-family: 'Lato',Arial, sans-serif;
+    font-weight: 800;
+    color: #3e3a3a;
+}
+body{
+    margin:0px;
+    color: black;
+    
+}
+header{
+    height: 80px;
+    width: 100%;
+    background-color: #ffe11b;
+    /*position: fixed;*/
+    z-index: 1000;
+    opacity: 0.95;
+    border-top: black solid 5px;
+}
+.header-logo{
+    padding-left: 35px;
+    font-family: monospace;
+    display: inline-block;
+    height: 80px;
+    width: 250px;
+}
+
+.header-logo div{
+    height: 100%;
+}
+header h1{
+    width: 120px;
+    display: inline-block;
+    height: 45px;
+    text-align: center;
+    color:black;
+}
+a{
+    text-decoration: none;
+}
+
+nav ul li{
+    text-decoration: none;
+    list-style-type: none;
+    display: inline;
+    padding: 25px;
+}
+nav{
+    display: inline-block;
+    float: right;
+    margin: 15px;
+}
+
+
+.c-btn{
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+    width: 170px;
+    height: 35px;
+    border-radius: 3px;
+    opacity: 0.9;
+    border-color: black;
+}
+.c-btn:hover{
+    color:#ffe11b;
+    cursor: pointer;
+}
+
+.hostVis{
+    display: inline-block;
+    float: right;
+    padding: 22.5px;
+}
+
+.paynest-logo-blk{
+    background: url(../img/paynest.png) no-repeat center;
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+
+/* Slider */
+.slide-img{
+    width: 100%;
+    height: 350px;
+    background-color: black;
+    position: relative;
+    background-image: url(https://wallpaperscraft.com/image/hotel_room_bed_stylish_modern_39745_1920x1080.jpg);
+    background-repeat: no-repeat;
+    background-blend-mode: normal;
+    background-position: center;
+    background-size: 100%;
+}
+section{
+    position: relative;
+}
+
+/*Loading*/
+
+.loading{
+    margin: auto;
+    width: 25%;
+    height: 75px;
+    background-image:url(../img/loading.gif);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+/* Flat Component */
+
+.fc-main-contain{
+    height: 400px;
+    width: 85%;
+    margin: 15px auto;
+    padding: 15px;
+    background-color: white;
+    cursor: pointer;
+    animation: fadein 1s;
+}
+.fc-list{
+    height: 95%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    vertical-align: middle;
+    display: flex;
+}
+.fc-head{
+    border-left: 6px solid #000;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 8px;
+    border-radius: 2px;
+}
+.pg-comp{
+    height: 95%;
+    width: 265px;
+    display: inline-block;
+    margin: 5px 5px;
+    background: white;
+    vertical-align: top;
+    /*box-shadow: 2px 2px 2px black;*/
+    
+    
+    border-radius: 2px;
+}
+.pg-comp-pImg{
+    width: 245px;
+    margin: 10px;
+    height: 250px;
+    box-shadow: inset 0px 0px 10px 0px black;
+    border-radius: 5px; 
+    
+    -webkit-transition: all 50ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 0ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 50ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 50ms ease-in;
+    transform: scale(1);
+}
+
+.pg-comp:hover .pg-comp-pImg{
+     -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.03);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.02);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.02);
+    transition: all 200ms ease-in;
+    transform: scale(1.05);
+}
+.pg-comp-name,.pg-comp-sname{
+    text-align: center;
+    position: relative;
+    color: #dedee2;
+    top: -80px;
+    
+}
+.pg-comp-name{
+    background: rgba(0, 0, 0, 0.7);
+    width: 80%;
+    height: 22px;
+    margin: auto;
+    border-radius: 4px;
+}
+.pg-comp-sname{
+    font-size: 0.8em;
+}
+.pg-comp:hover{
+    cursor: pointer;
+    
+    box-shadow: 0px 0px 40px #000000;
+    z-index: 2;
+   
+    
+}
+.pg-comp:hover .pg-comp-name{
+    color:#ffe11b;
+    text-shadow: 1px 2px 3px black;
+}
+.pg-comp-like{
+    background: url(../img/rate.png);
+    width: 15px;
+    height: 15px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin: 3px;
+    vertical-align: middle;
+}
+.pg-comp-rating{
+    margin: 3px;
+    color:white;
+    top: -80px;
+    width: 45%;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+}
+.pg-comp-year{
+        margin: 3px;
+    color:white;
+    top: -80px;
+    width: 45%;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+}
+.pg-comp-address{
+    max-height: 90px;
+    position: relative;
+    top: -65px;
+    font-size: 0.8em;
+    text-align: center;
+}
+.pg-comp-contact{
+    position: relative;
+    top: -65px;
+    height: 18px;
+    font-size: small;
+    overflow: hidden;
+   padding: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+.pg-comp-features{
+    top: -65px;
+    height: 35px;
+    position: relative;
+    text-align: center;
+}
+.pg-features{
+    height: 25px;
+    width: 8%;
+    margin: 3px;
+    position: relative;
+    border-radius: 5px;
+    display: inline-block;
+}
+.call-icon{
+    background: url(../img/call-b.png) no-repeat center;
+    background-size: cover;
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.wifi{
+    background: url(../img/wifi-b.png) no-repeat center;
+    background-size: 80%;
+    background-color: #FFE83B;
+}
+.wifi:hover{
+    background: url(../img/wifi-y.png) no-repeat center;
+    background-size: 80%;
+    background-color: #000;
+}
+.tv{
+    background: url(../img/tv-b.png) no-repeat center;
+    background-size: 80%;
+    background-color: #FFE83B;
+}
+.tv:hover{
+    background: url(../img/tv-y.png) no-repeat center;
+    background-size: 80%;
+    background-color: #000;
+}
+
+.water{
+    background: url(../img/tab-b.png) no-repeat center;
+    background-size: 80%;
+    background-color: #FFE83B;
+}
+.water:hover{
+    background: url(../img/tab-y.png) no-repeat center;
+    background-size: 80%;
+    background-color: #000;
+}
+
+.geyser{
+    background: url(../img/heater-b.png) no-repeat center;
+    background-size: 80%;
+    background-color: #FFE83B;
+}
+.geyser:hover{
+    background: url(../img/heater-y.png) no-repeat center;
+    background-size: 80%;
+    background-color: #000;
+}
+
+.fridge{
+    background: url(../img/fridge-b.png) no-repeat center;
+    background-size: 80%;
+    background-color: #FFE83B;
+}
+.fridge:hover{
+    background: url(../img/fridge-y.png) no-repeat center;
+    background-size: 80%;
+    background-color: #000;
+}
+
+.ac{
+    background: url(../img/ac-b.png) no-repeat center;
+    background-size: 80%;
+    background-color: #FFE83B;
+}
+.ac:hover{
+    background: url(../img/ac-y.png) no-repeat center;
+    background-size: 80%;
+    background-color: #000;
+}
+
+
+.cam{
+    background: url(../img/cam-b.png) no-repeat center;
+    background-size: 80%;
+    background-color: #FFE83B;
+}
+.cam:hover{
+    background: url(../img/cam-y.png) no-repeat center;
+    background-size: 80%;
+    background-color: #000;
+}
+
+.nvfood{
+    background: url(../img/nvfood-b.png) no-repeat center;
+    background-size: 80%;
+    background-color: #FFE83B;
+}
+.nvfood:hover{
+    background: url(../img/nvfood-y.png) no-repeat center;
+    background-size: 80%;
+    background-color: #000;
+}
+
+.vfood{
+    background: url(../img/vfood-b.png) no-repeat center;
+    background-size: 80%;
+    background-color: #FFE83B;
+}
+.vfood:hover{
+    background: url(../img/vfood-y.png) no-repeat center;
+    background-size: 80%;
+    background-color: #000;
+}
+.locker{
+    background: url(../img/locker-b.png) no-repeat center;
+    background-size: 80%;
+    background-color: #FFE83B;
+}
+.locker:hover{
+    background: url(../img/locker-y.png) no-repeat center;
+    background-size: 80%;
+    background-color: #000;
+}
+.gents{
+    background: url(../img/g-shoe-b.png) no-repeat center;
+    background-size: 80%;
+    background-color: #FFE83B;
+}
+.gents:hover{
+    background: url(../img/g-shoe-y.png) no-repeat center;
+    background-size: 80%;
+    background-color: #000;
+}
+.ladies{
+    background: url(../img/l-shoe-b.png) no-repeat center;
+    background-size: 80%;
+    background-color: #FFE83B;
+}
+.ladies:hover{
+    background: url(../img/l-shoe-y.png) no-repeat center;
+    background-size: 80%;
+    background-color: #000;
+}
+
+.next{
+    background: url(../img/next.png) no-repeat center;
+    background-size: 80%;
+    height: 95%;
+    width: 25px;
+    cursor: pointer;
+    vertical-align: middle;
+    float: right;
+}
+.prev{
+    background: url(../img/prev.png) no-repeat center;
+    background-size: 80%;
+    height: 95%;
+    width: 25px;
+    cursor: pointer;
+    vertical-align: middle;
+    float: left;
+}
+
+/* Tooltip */
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+.tooltip .tooltiptext {
+    top: -25px;
+    left: -18px;
+    visibility: hidden;
+    width: 60px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    font-size: 10px;
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+
+/* Footer */
+
+nav ul li a div{
+    height:20px;
+    width:20px;
+    background-color: #FFEB3B;
+    display: inline-block;
+}
+footer{
+    top:135px;
+    height: 55px;
+    width: 100%;
+    background-color: black;
+    /*position: relative;*/
+    z-index: 1000;
+    opacity: 0.95;
+    border-top: grey solid 5px;
+}
+.f-sm{
+    width: 600px;
+    display: inline-block;
+    float: right;
+}
+.f-content{
+    width: 125px;
+    display: inline-block;
+    position: absolute;
+    padding: 15px;
+    color: white;
+}
+.f-sm nav ul li{
+    padding: 15px;
+    color: whitesmoke;
+    vertical-align: middle;
+    position: relative;
+    
+}
+.f-sm nav {
+    margin:0px;
+}
+
+#f-fb{
+    background: url(../img/fb-y.png) no-repeat center;
+    background-size: cover;
+}
+#f-insta{
+    background: url(../img/instagram-y.png) no-repeat center;
+    background-size: cover;
+}
+#f-twitter{
+    background: url(../img/twitter-y.png) no-repeat center;
+    background-size: cover;
+}
+#f-logo{
+    background: url(../img/paynest-y.png) no-repeat center;
+    background-size: cover;
+    height: 25px;
+    width: 25px;
+    margin-right: 15px;
+    margin-left: 15px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+.close-btn{
+    height: 20px;
+    width: 20px;
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+    border-radius: 13px;
+    position: relative;
+    background-size: 30%!important;
+    background-color: black;
+    z-index: 3;
+}
+.close-btn:hover{
+    transition: all 100ms ease-in;
+    transform: scale(1.1);
+}
+
+.close-in{
+        width: 5px;
+    height: 5px;
+    background-color: #ffee58;
+    position: relative;
+    /* vertical-align: middle; */
+    margin: auto;
+    top: 7.5px;
+    border-radius: 3px;
+}
+
+.home-container{
+    animation: fadein 1s;
+}
+
+
+/* Visitor Page */
+.h-main{
+    text-align: center;
+    animation: fadein 1s;
+}
+@keyframes fadein {
+  from { opacity: 0}
+  to   { opacity: 1}
+}
+.h-dentry   {
+    height: 600px;
+    width: 300px;
+    margin: 25px;
+    border-radius: 36px;
+    padding-top: 5px;
+    background-color: #424242;
+    box-shadow: 0px 0px 25px 3px grey;
+    display: inline-block;
+}
+
+.h-dentry:hover{
+    transition: all 200ms ease-in;
+    transform:scale(1.02);
+}
+.h-select{
+    width: 50%;
+    height: 25px;
+    background-color: black;
+    color: white;
+    font-family: inherit;
+    font-weight: bold;
+}
+.dentry-form{
+    padding: 30px 50px;
+    border-radius: 33px;
+    background-color: #ffee58;
+    display: inline-block;
+}
+
+input{
+    border: 0px;
+    border-bottom: 2px solid black;
+    width: 100%;
+    height:20px;
+    outline: none;
+    font-family: inherit;
+    font-weight: bolder;
+    background-color: #ffee58;
+    text-align: center; 
+}
+
+textarea{
+   border: 0px;
+    border-bottom: 2px solid black;
+    width: 100%;
+    height:50px; 
+    outline: none;
+    font-family: inherit;
+    font-weight: bolder;
+    background-color: #ffee58;
+}
+
+.hw{
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 10px;
+    margin: 4px;
+}
+
+.cb{
+    height: 12px;
+    width: 12px;
+    vertical-align: middle;
+}
+.pset{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.btn-submit{
+    background: black;
+    color: white;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    background: url(../img/send.png) no-repeat center;
+    border-radius: 21px;
+    cursor: pointer;
+    background-color: #424242;
+    background-size: 50%;
+    margin: 20px auto 10px;
+    border: 0px;
+}
+.btn-submit:hover{
+    animation: fadein 500ms;
+    transform: scale(1.05);
+}
+
+.disabled{
+    pointer-events: none;
+    opacity: 0.5;
+    transform: scale(0.8);
+    display: none;
+}
+.half-width{
+    width: 45%;
+    display: inline-block;
+    margin: auto 3px;
+}
+.f-big{
+    font-size: 1.03em;
+}
+
+@media (min-width:1090px){
+    .disabled{
+        display: inline-block;
+    }
+    
+}
+@media (max-width:412px){
+    .c-btn{
+        width:25px;
+        height: 25px;
+        border-radius:13px;
+        margin-top: 10px;
+        overflow: hidden;
+    }
+    .hostVis{
+        padding: 5px;
+    }
+}
+
+.h-radio{
+    width:12.5px;
+    height: 12.5px;
+        
+}
+
+
+
+/* City Component*/
+
+.city-collection{
+    margin: 10px;
+    text-align: center;
+    position: relative;
+    padding: 167px;
+}
+.city-detail{
+    width: 30%;
+    height: 150px;
+    margin: 5px;
+    display: inline-block;
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 150px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color:white;
+    box-shadow: 0px 0px 9px 1px #000;
+    cursor: pointer;
+}
